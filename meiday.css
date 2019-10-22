@@ -1,0 +1,54 @@
+
+.serif {
+  Font-Family: 'Merriweather', Serif;
+}
+.sans {
+  Font-Family: 'Muli', Sans-Serif;
+}
+
+.hue {
+  animation: hue 5s infinite;
+}
+
+@keyframes hue {
+  0%, 100%  { filter: hue-rotate(0deg); }
+  50% { filter: hue-rotate(180deg); }
+}
+
+.move {
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather Regular'), local('Merriweather-Regular'), url('webfonts/Merriweather/Merriweather-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Muli Light'), local('Muli-Light'), url('webfonts/Muli/Muli-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Muli Regular'), local('Muli-Regular'), url('webfonts/Muli/Muli-Regular.ttf');
+}
